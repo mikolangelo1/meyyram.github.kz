@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогресс | BrainBoost</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="progress.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <span class="logo__text">BrainBoost</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="training.html" class="nav__link">Тренировки</a></li>
+                    <li><a href="progress.html" class="nav__link active">Прогресс</a></li>
+                    <li><a href="community.html" class="nav__link">Сообщество</a></li>
+                </ul>
+            </nav>
+            <div class="header__user">
+                <div class="header__auth">
+                    <a href="login.html" class="button button--secondary">Войти</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="progress-header">
+                <div class="progress-header__info">
+                    <h1 class="progress-title">Ваш прогресс</h1>
+                </div>
+                <div class="progress-header__actions">
+                    <div class="date-range">
+                        <button class="date-button active">Неделя</button>
+                        <button class="date-button">Месяц</button>
+                        <button class="date-button">Год</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="progress-grid">
+                <!-- Статистика -->
+                <section class="stats-section">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-card__icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <div class="stat-card__content">
+                                <div class="stat-card__value">87%</div>
+                                <div class="stat-card__label">Средняя точность</div>
+                            </div>
+                            <div class="stat-card__trend positive">+5%</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-card__icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div class="stat-card__content">
+                                <div class="stat-card__value">14.2</div>
+                                <div class="stat-card__label">Часов тренировок</div>
+                            </div>
+                            <div class="stat-card__trend positive">+2.5</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-card__icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                            <div class="stat-card__content">
+                                <div class="stat-card__value">42</div>
+                                <div class="stat-card__label">Дней подряд</div>
+                            </div>
+                            <div class="stat-card__trend">Рекорд!</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-card__icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                                </svg>
+                            </div>
+                            <div class="stat-card__content">
+                                <div class="stat-card__value">1,240</div>
+                                <div class="stat-card__label">Очков опыта</div>
+                            </div>
+                            <div class="stat-card__trend positive">+180</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Графики прогресса -->
+                <section class="charts-section">
+                    <div class="chart-card">
+                        <div class="chart-card__header">
+                            <h3 class="chart-card__title">Динамика показателей</h3>
+                            <div class="chart-card__legend">
+                                <span class="legend-item">
+                                    <span class="legend-color" style="background: #60a5fa"></span>
+                                    Память
+                                </span>
+                                <span class="legend-item">
+                                    <span class="legend-color" style="background: #34d399"></span>
+                                    Внимание
+                                </span>
+                                <span class="legend-item">
+                                    <span class="legend-color" style="background: #f59e0b"></span>
+                                    Логика
+                                </span>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="progressChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <div class="chart-card__header">
+                            <h3 class="chart-card__title">Распределение тренировок</h3>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="distributionChart"></canvas>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Достижения -->
+                <section class="achievements-section">
+                    <h2 class="section-title">Последние достижения</h2>
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-card__icon">🏆</div>
+                            <div class="achievement-card__content">
+                                <h3 class="achievement-card__title">Мастер памяти</h3>
+                                <p class="achievement-card__description">100% точность в упражнении "Матрица памяти"</p>
+                            </div>
+                            <div class="achievement-card__date">Сегодня</div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-card__icon">⚡</div>
+                            <div class="achievement-card__content">
+                                <h3 class="achievement-card__title">Быстрый старт</h3>
+                                <p class="achievement-card__description">7 дней тренировок подряд</p>
+                            </div>
+                            <div class="achievement-card__date">2 дня назад</div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-card__icon">🎯</div>
+                            <div class="achievement-card__content">
+                                <h3 class="achievement-card__title">Точный глаз</h3>
+                                <p class="achievement-card__description">Пройдено 50 упражнений на внимательность</p>
+                            </div>
+                            <div class="achievement-card__date">Неделю назад</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">© 2025 BrainBoost. Все права защищены</p>
+            <p class="footer__update">Последнее обновление: 2025-05-06 03:13:31</p>
+        </div>
+    </footer>
+
+    <script src="progress.js"></script>
+</body>
+</html>

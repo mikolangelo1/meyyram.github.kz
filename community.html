@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сообщество | BrainBoost</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="community.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <span class="logo__text">BrainBoost</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="training.html" class="nav__link">Тренировки</a></li>
+                    <li><a href="progress.html" class="nav__link">Прогресс</a></li>
+                    <li><a href="community.html" class="nav__link active">Сообщество</a></li>
+                </ul>
+            </nav>
+            <div class="header__user">
+                <div class="header__auth">
+                    <a href="login.html" class="button button--secondary">Войти</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="community-layout">
+                <!-- Левая колонка (рейтинг) -->
+                <aside class="leaderboard-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Топ участников</h2>
+                        <select class="period-select">
+                            <option value="week">За неделю</option>
+                            <option value="month">За месяц</option>
+                            <option value="all">За всё время</option>
+                        </select>
+                    </div>
+
+                    <div class="leaderboard">
+                        <div class="leaderboard-item top">
+                            <div class="rank">1</div>
+                            <div class="user-avatar">A</div>
+                            <div class="user-info">
+                                <div class="username">AlexMaster</div>
+                                <div class="score">12,450 очков</div>
+                            </div>
+                            <div class="achievement-badges">
+                                <span class="badge" title="Эксперт логики">🧠</span>
+                                <span class="badge" title="Мастер памяти">💫</span>
+                            </div>
+                        </div>
+
+                        <div class="leaderboard-item top">
+                            <div class="rank">2</div>
+                            <div class="user-avatar">S</div>
+                            <div class="user-info">
+                                <div class="username">SuperMind</div>
+                                <div class="score">11,280 очков</div>
+                            </div>
+                            <div class="achievement-badges">
+                                <span class="badge" title="Эксперт внимания">👁️</span>
+                            </div>
+                        </div>
+
+                        <div class="leaderboard-item top">
+                            <div class="rank">3</div>
+                            <div class="user-avatar">M</div>
+                            <div class="user-info">
+                                <div class="username">mikolangelo1</div>
+                                <div class="score">10,890 очков</div>
+                            </div>
+                            <div class="achievement-badges">
+                                <span class="badge" title="Мастер креативности">✨</span>
+                            </div>
+                        </div>
+
+                        <!-- Остальные участники -->
+                        <div class="leaderboard-item">
+                            <div class="rank">4</div>
+                            <div class="user-avatar">B</div>
+                            <div class="user-info">
+                                <div class="username">BrainPro</div>
+                                <div class="score">9,740 очков</div>
+                            </div>
+                        </div>
+
+                        <div class="leaderboard-item">
+                            <div class="rank">5</div>
+                            <div class="user-avatar">L</div>
+                            <div class="user-info">
+                                <div class="username">LogicQueen</div>
+                                <div class="score">8,920 очков</div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Правая колонка (обсуждения) -->
+                <section class="discussions-section">
+                    <div class="section-header">
+                        <h1 class="section-title">Обсуждения</h1>
+                        <button class="button button--primary">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                            </svg>
+                            Создать тему
+                        </button>
+                    </div>
+
+                    <div class="discussions-filters">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Поиск по обсуждениям..." class="search-input">
+                            <button class="search-button">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="filters">
+                            <button class="filter-chip active">Все</button>
+                            <button class="filter-chip">Вопросы</button>
+                            <button class="filter-chip">Обсуждения</button>
+                            <button class="filter-chip">Решения</button>
+                        </div>
+                    </div>
+
+                    <div class="discussions-list">
+                        <!-- Закрепленное обсуждение -->
+                        <article class="discussion-card pinned">
+                            <div class="discussion-card__pin">📌</div>
+                            <div class="discussion-card__main">
+                                <h3 class="discussion-card__title">
+                                    <a href="#">Правила сообщества и часто задаваемые вопросы</a>
+                                </h3>
+                                <p class="discussion-card__excerpt">
+                                    Важная информация для всех участников сообщества...
+                                </p>
+                                <div class="discussion-card__meta">
+                                    <span class="meta-item">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                        </svg>
+                                        05.05.2025
+                                    </span>
+                                    <span class="meta-item">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                                        </svg>
+                                        142 комментария
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Обычные обсуждения -->
+                        <article class="discussion-card">
+                            <div class="discussion-card__votes">
+                                <button class="vote-button">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                                    </svg>
+                                </button>
+                                <span class="vote-count">24</span>
+                                <button class="vote-button">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="discussion-card__main">
+                                <div class="discussion-card__tags">
+                                    <span class="tag">Логика</span>
+                                    <span class="tag">Вопрос</span>
+                                </div>
+                                <h3 class="discussion-card__title">
+                                    <a href="#">Как улучшить логическое мышление: делимся опытом</a>
+                                </h3>
+                                <p class="discussion-card__excerpt">
+                                    Делюсь своим опытом развития логического мышления и хочу узнать ваши методы...
+                                </p>
+                                <div class="discussion-card__meta">
+                                    <span class="meta-item">
+                                        <img src="avatar1.jpg" alt="" class="meta-avatar">
+                                        AlexMaster
+                                    </span>
+                                    <span class="meta-item">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        2 часа назад
+                                    </span>
+                                    <span class="meta-item">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                                        </svg>
+                                        18 комментариев
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="discussion-card">
+                            <div class="discussion-card__votes">
+                                <button class="vote-button">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                                    </svg>
+                                </button>
+                                <span class="vote-count">15</span>
+                                <button class="vote-button">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="discussion-card__main">
+                                <div class="discussion-card__tags">
+                                    <span class="tag">Память</span>
+                                    <span class="tag">Обсуждение</span>
+                                </div>
+                                <h3 class="discussion-card__title">
+                                    <a href="#">Мнемотехники: какие работают лучше всего?</a>
+                                </h3>
+                                <p class="discussion-card__excerpt">
+                                    Давайте обсудим различные техники запоминания и их эффективность...
+                                </p>
+                                <div class="discussion-card__meta">
+                                    <span class="meta-item">
+                                        <img src="avatar2.jpg" alt="" class="meta-avatar">
+                                        SuperMind
+                                    </span>
+                                    <span class="meta-item">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        5 часов назад
+                                    </span>
+                                    <span class="meta-item">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                                        </svg>
+                                        32 комментария
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="discussions-pagination">
+                        <button class="pagination-button" disabled>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <div class="pagination-numbers">
+                            <button class="pagination-number active">1</button>
+                            <button class="pagination-number">2</button>
+                            <button class="pagination-number">3</button>
+                            <span class="pagination-dots">...</span>
+                            <button class="pagination-number">12</button>
+                        </div>
+                        <button class="pagination-button">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">© 2025 BrainBoost. Все права защищены</p>
+            <p class="footer__update">Последнее обновление: 2025-05-06 03:17:56</p>
+        </div>
+    </footer>
+</body>
+</html>

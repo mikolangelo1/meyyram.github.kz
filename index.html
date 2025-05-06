@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainBoost | Развитие мышления</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <span class="logo__text">BrainBoost</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="training.html" class="nav__link">Тренировки</a></li>
+                    <li><a href="progress.html" class="nav__link">Прогресс</a></li>
+                    <li><a href="community.html" class="nav__link">Сообщество</a></li>
+                </ul>
+            </nav>
+            <div class="header__user">
+                <div class="header__auth">
+                    <a href="login.html" class="button button--secondary">Войти</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="hero__label">Тренируй свой мозг</span>
+                    <h1 class="hero__title">Развивай мышление через игровые упражнения</h1>
+                    <p class="hero__text">Регулярные тренировки памяти, внимания и логики помогут улучшить когнитивные способности и повысить эффективность мышления</p>
+                    <div class="hero__actions">
+                        <a href="training.html" class="button button--primary">Начать тренировку</a>
+                        <a href="404.html" class="button button--primary">Посмотреть демо</a>
+                    </div>
+                </div>
+                <div class="hero__stats">
+                    <div class="stat-card">
+                        <div class="stat-card__number">15k+</div>
+                        <div class="stat-card__label">активных пользователей</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__number">500+</div>
+                        <div class="stat-card__label">упражнений</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__number">92%</div>
+                        <div class="stat-card__label">улучшили результаты</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exercises">
+            <div class="container">
+                <header class="section-header">
+                    <p class="section-subtitle">Каждое упражнение разработано для развития определённых когнитивных навыков</p>
+                </header>
+
+                <div class="exercises__grid">
+                    <article class="exercise-card">
+                        <div class="exercise-card__icon">🧩</div>
+                        <h3 class="exercise-card__title">Логические задачи</h3>
+                        <p class="exercise-card__description">Развивайте аналитическое мышление через решение головоломок и логических упражнений</p>
+                        <div class="exercise-card__meta">
+                            <span>Сложность: Средняя</span>
+                            <span>10-15 минут</span>
+                        </div>
+                    </article>
+
+                    <article class="exercise-card">
+                        <div class="exercise-card__icon">🎯</div>
+                        <h3 class="exercise-card__title">Память и внимание</h3>
+                        <p class="exercise-card__description">Тренируйте кратковременную память и концентрацию внимания</p>
+                        <div class="exercise-card__meta">
+                            <span>Сложность: Лёгкая</span>
+                            <span>5-10 минут</span>
+                        </div>
+                    </article>
+
+                    <article class="exercise-card">
+                        <div class="exercise-card__icon">💡</div>
+                        <h3 class="exercise-card__title">Креативное мышление</h3>
+                        <p class="exercise-card__description">Развивайте творческий подход к решению нестандартных задач</p>
+                        <div class="exercise-card__meta">
+                            <span>Сложность: Высокая</span>
+                            <span>15-20 минут</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="progress">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Отслеживайте свой прогресс</h2>
+                    <p class="section-subtitle">Наглядная статистика поможет увидеть ваш рост</p>
+                </header>
+
+                <div class="progress__content">
+                    <div class="progress__chart">
+                        <canvas id="progressChart"></canvas>
+                    </div>
+                    <div class="progress__metrics">
+                        <div class="metric-card">
+                            <div class="metric-card__title">Текущий уровень</div>
+                            <div class="metric-card__value">Продвинутый</div>
+                            <div class="metric-card__progress" style="--progress: 75%"></div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-card__title">Серия тренировок</div>
+                            <div class="metric-card__value">12 дней</div>
+                            <div class="metric-card__progress" style="--progress: 60%"></div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-card__title">Точность решений</div>
+                            <div class="metric-card__value">87%</div>
+                            <div class="metric-card__progress" style="--progress: 87%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Готовы начать тренировки?</h2>
+                    <p class="cta__text">Присоединяйтесь к тысячам людей, которые уже улучшили свои когнитивные способности</p>
+                    <a href="training.html" class="button button--primary button--large">Попробовать бесплатно</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <div class="footer__logo">BrainBoost</div>
+                    <p class="footer__copyright">© 2025 BrainBoost. Все права защищены</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">О нас</h4>
+                        <ul class="footer__list">
+                            <li><a href="404.html">О проекте</a></li>
+                            <li><a href="404.html">Научный подход</a></li>
+                            <li><a href="404.html">Команда</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Поддержка</h4>
+                        <ul class="footer__list">
+                            <li><a href="404.html">Центр помощи</a></li>
+                            <li><a href="404.html">Связаться с нами</a></li>
+                            <li><a href="404.html">Частые вопросы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Правовая информация</h4>
+                        <ul class="footer__list">
+                            <li><a href="404.html">Конфиденциальность</a></li>
+                            <li><a href="404.html">Условия использования</a></li>
+                            <li><a href="404.html">Политика cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

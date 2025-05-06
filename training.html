@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренировки | BrainBoost</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <span class="logo__text">BrainBoost</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="training.html" class="nav__link active">Тренировки</a></li>
+                    <li><a href="progress.html" class="nav__link">Прогресс</a></li>
+                    <li><a href="community.html" class="nav__link">Сообщество</a></li>
+                </ul>
+            </nav>
+            <div class="header__user">
+                <div class="header__auth">
+                    <a href="login.html" class="button button--secondary">Войти</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="training-header">
+                <h1 class="training-title">Тренировки</h1>
+                <div class="training-filters">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Поиск тренировок..." class="search-input">
+                        <button class="search-button">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-button active">Все</button>
+                        <button class="filter-button">Логика</button>
+                        <button class="filter-button">Память</button>
+                        <button class="filter-button">Внимание</button>
+                        <button class="filter-button">Креативность</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="training-grid">
+                <!-- Внимание и концентрация -->
+                <article class="training-card">
+                    <div class="training-card__image">
+                        <img src="images/vnim.jpg" alt="Тест на внимательность">
+                        <span class="training-card__category">Внимание</span>
+                    </div>
+                    <div class="training-card__content">
+                        <h2 class="training-card__title">Тест на внимательность</h2>
+                        <p class="training-card__description">Улучшайте концентрацию внимания и скорость реакции</p>
+                        <div class="training-card__meta">
+                            <div class="training-card__stats">
+                                <span class="stat">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    8 мин
+                                </span>
+                                <span class="stat">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+                                    </svg>
+                                    Легкий
+                                </span>
+                            </div>
+                            <a href="404.html"<button class="button button--primary">Начать</button></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Креативное мышление -->
+                <article class="training-card">
+                    <div class="training-card__image">
+                        <img src="images/creat.jpg" alt="Креативные задачи">
+                        <span class="training-card__category">Креативность</span>
+                    </div>
+                    <div class="training-card__content">
+                        <h2 class="training-card__title">Креативные задачи</h2>
+                        <p class="training-card__description">Развивайте творческое мышление и генерируйте новые идеи</p>
+                        <div class="training-card__meta">
+                            <div class="training-card__stats">
+                                <span class="stat">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    20 мин
+                                </span>
+                                <span class="stat">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+                                    </svg>
+                                    Сложный
+                                </span>
+                            </div>
+                            <a href="404.html"<button class="button button--primary">Начать</button></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Визуальная память -->
+                <article class="training-card">
+                    <div class="training-card__image">
+                        <img src="images/memory.jpg" alt="Визуальная память">
+                        <span class="training-card__category">Память</span>
+                    </div>
+                    <div class="training-card__content">
+                        <h2 class="training-card__title">Визуальная память</h2>
+                        <p class="training-card__description">Тренируйте способность запоминать визуальную информацию</p>
+                        <div class="training-card__meta">
+                            <div class="training-card__stats">
+                                <span class="stat">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    12 мин
+                                </span>
+                                <span class="stat">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+                                    </svg>
+                                    Средний
+                                </span>
+                            </div>
+                            <a href="404.html"<button class="button button--primary">Начать</button></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Числовые последовательности -->
+                <article class="training-card">
+                    <div class="training-card__image">
+                        <img src="images/chisla.jpg" alt="Числовые последовательности">
+                        <span class="training-card__category">Логика</span>
+                    </div>
+                    <div class="training-card__content">
+                        <h2 class="training-card__title">Числовые последовательности</h2>
+                        <p class="training-card__description">Находите закономерности в числовых рядах</p>
+                        <div class="training-card__meta">
+                            <div class="training-card__stats">
+                                <span class="stat">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    15 мин
+                                </span>
+                                <span class="stat">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+                                    </svg>
+                                    Сложный
+                                </span>
+                            </div>
+                            <a href="404.html"<button class="button button--primary">Начать</button></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Скорочтение -->
+                <article class="training-card">
+                    <div class="training-card__image">
+                        <img src="images/chitaet.jpg" alt="Скорочтение">
+                        <span class="training-card__category">Внимание</span>
+                    </div>
+                    <div class="training-card__content">
+                        <h2 class="training-card__title">Скорочтение</h2>
+                        <p class="training-card__description">Увеличивайте скорость чтения и понимания текста</p>
+                        <div class="training-card__meta">
+                            <div class="training-card__stats">
+                                <span class="stat">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    25 мин
+                                </span>
+                                <span class="stat">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+                                    </svg>
+                                    Средний
+                                </span>
+                            </div>
+                            <a href="404.html"<button class="button button--primary">Начать</button></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Пространственное мышление -->
+                <article class="training-card">
+                    <div class="training-card__image">
+                        <img src="images/dumaet.jpg" alt="Пространственное мышление">
+                        <span class="training-card__category">Логика</span>
+                    </div>
+                    <div class="training-card__content">
+                        <h2 class="training-card__title">Пространственное мышление</h2>
+                        <p class="training-card__description">Развивайте способность мысленно оперировать объектами</p>
+                        <div class="training-card__meta">
+                            <div class="training-card__stats">
+                                <span class="stat">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    18 мин
+                                </span>
+                                <span class="stat">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+                                    </svg>
+                                    Сложный
+                                </span>
+                            </div>
+                            <a href="404.html"<button class="button button--primary">Начать</button></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Мнемотехники -->
+                <article class="training-card">
+                    <div class="training-card__image">
+                        <img src="images/mnemo.jpg" alt="Мнемотехники">
+                        <span class="training-card__category">Память</span>
+                    </div>
+                    <div class="training-card__content">
+                        <h2 class="training-card__title">Мнемотехники</h2>
+                        <p class="training-card__description">Осваивайте техники эффективного запоминания информации</p>
+                        <div class="training-card__meta">
+                            <div class="training-card__stats">
+                                <span class="stat">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    20 мин
+                                </span>
+                                <span class="stat">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+                                    </svg>
+                                    Средний
+                                </span>
+                            </div>
+                            <a href="404.html"<button class="button button--primary">Начать</button></a>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="training-pagination">
+                <button class="pagination-button" disabled>
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <div class="pagination-numbers">
+                    <button class="pagination-number active">1</button>
+                    <button class="pagination-number">2</button>
+                    <button class="pagination-number">3</button>
+                    <button class="pagination-number">4</button>
+                    <span class="pagination-dots">...</span>
+                    <button class="pagination-number">12</button>
+                </div>
+                <button class="pagination-button">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">© 2025 BrainBoost. Все права защищены</p>
+        </div>
+    </footer>
+</body>
+</html>
